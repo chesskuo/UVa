@@ -1,0 +1,40 @@
+/*******************************************************************************************************
+* UVa 913 - Joana and the Odd Numbers                                                                  *
+* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=854  *
+* https://www.udebug.com/UVa/913                                                                     *
+*******************************************************************************************************/
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+	#ifndef ONLINE_JUDGE
+	freopen("input.in", "r", stdin);
+	#endif
+
+	long long int input;
+
+	while(scanf("%lld", &input) != EOF)
+	{
+		long long int count=1, total=1, output=0;
+
+		for(long long int i=0; i<(input+1)/2; i++)
+		{
+			total += count*2;
+			count += 2;
+		}
+
+		total -= 2;
+
+		for(long long int i=0; i<3; i++)
+		{
+			output += total;
+			total -= 2;
+		}
+
+		printf("%lld\n", output);
+	}
+
+	return 0;
+}

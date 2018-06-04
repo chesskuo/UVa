@@ -17,23 +17,12 @@ int main()
 
 	while(scanf("%lld", &input) != EOF)
 	{
-		long long int count=1, total=1, output=0;
+		long long int count=1, total=1;
 
-		for(long long int i=0; i<(input+1)/2; i++)
-		{
-			total += count*2;
-			count += 2;
-		}
+		count = (1 + input) * ((input + 1) / 2) / 2;
+		total = 3 * (2 * count - 1) - 6;
 
-		total -= 2;
-
-		for(long long int i=0; i<3; i++)
-		{
-			output += total;
-			total -= 2;
-		}
-
-		printf("%lld\n", output);
+		printf("%lld\n", total);
 	}
 
 	return 0;

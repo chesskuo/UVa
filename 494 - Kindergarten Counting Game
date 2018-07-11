@@ -16,9 +16,10 @@ int main()
 
 	char input[1001];
 
-	while(gets(input))
-	//while(scanf("%1000[^\n]", input) != EOF)
+	while(scanf("%1000[^\n]", input) != EOF)
 	{
+		getchar();
+
 		size_t count=0, flag;
 
 		for(size_t i=0; i<strlen(input); i++)

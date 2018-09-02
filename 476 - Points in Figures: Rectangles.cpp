@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 476 - Points in Figures: Rectangles                                                              *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=417  *
-* https://www.udebug.com/UVa/476                                                                       *
-*******************************************************************************************************/
+// ----------
+// UVa 476 - Points in Figures: Rectangles
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=417
+// https://www.udebug.com/UVa/476
+// ----------
+
 #include <cstdio>
 
 using namespace std;

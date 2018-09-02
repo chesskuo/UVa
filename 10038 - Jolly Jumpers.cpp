@@ -3,6 +3,7 @@
 // https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=979
 // https://www.udebug.com/UVa/10038
 // ----------
+
 #include <cstdio>
 
 using namespace std;

@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 477 - Points in Figures: Rectangles and Circles                                                  *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=418  *
-* https://www.udebug.com/UVa/477                                                                       *
-*******************************************************************************************************/
+// ----------
+// UVa 477 - Points in Figures: Rectangles and Circles
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=418
+// https://www.udebug.com/UVa/477
+// ----------
+
 #include <cstdio>
 
 using namespace std;

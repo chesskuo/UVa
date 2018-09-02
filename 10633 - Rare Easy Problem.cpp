@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 10633 - Rare Easy Problem                                                                        *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1574 *
-* https://www.udebug.com/UVa/10633                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 10633 - Rare Easy Problem
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1574
+// https://www.udebug.com/UVa/10633
+// ----------
+
 #include <iostream>
 #include <cstdio>
 

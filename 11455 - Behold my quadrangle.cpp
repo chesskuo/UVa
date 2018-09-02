@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 11455 - Behold my quadrangle                                                                     *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2450 *
-* https://www.udebug.com/UVa/11455                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 11455 - Behold my quadrangle
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2450
+// https://www.udebug.com/UVa/11455
+// ----------
+
 #include <cstdio>
 
 using namespace std;

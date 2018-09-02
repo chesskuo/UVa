@@ -1,8 +1,8 @@
-/*******************************************************************************************************
-* UVa 11991 - Easy Problem from Rujia Liu?                                                             *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3142 *
-* https://www.udebug.com/UVa/11991                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 11991 - Easy Problem from Rujia Liu?
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3142
+// https://www.udebug.com/UVa/11991
+// ----------
 #include <iostream>
 #include <cstdio>
 #include <vector>

@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 10370 - Above Average                                                                            *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1311 *
-* https://www.udebug.com/UVa/10370                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 10370 - Above Average
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1311
+// https://www.udebug.com/UVa/10370
+// ----------
+
 #include <iostream>
 #include <cstdio>
 

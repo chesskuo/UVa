@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 11716 - Digital Fortress                                                                           *
-* https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2763 *
-* https://www.udebug.com/UVa/11716                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 11716 - Digital Fortress
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2763
+// https://www.udebug.com/UVa/11716
+// ----------
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>

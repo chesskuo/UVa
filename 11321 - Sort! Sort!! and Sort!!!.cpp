@@ -1,8 +1,9 @@
-/*******************************************************************************************************
-* UVa 11321 - Sort! Sort!! and Sort!!!                                                                 *
-* https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2296              *
-* https://www.udebug.com/UVa/11321                                                                     *
-*******************************************************************************************************/
+// ----------
+// UVa 11321 - Sort! Sort!! and Sort!!!
+// https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2296
+// https://www.udebug.com/UVa/11321
+// ----------
+
 #include <cstdio>
 #include <cstdlib>
 

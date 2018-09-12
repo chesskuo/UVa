@@ -1,22 +1,29 @@
 // ----------
-// UVa 686 - Goldbach's Conjecture (II)
+// 686 - Goldbach's Conjecture (II)
 // https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=627
 // https://www.udebug.com/UVa/686
 // ----------
 
 #include <cstdio>
+#include <cstring>
+#include <cmath>
+#include <algorithm>
 
 using namespace std;
 
-bool prime(int in)
-{
-	for(int i=2; i<in; i++)
-	{
-		if(in%i == 0)
-			return false;
-	}
+bool table[32769];
 
-	return true;
+void prime_table()
+{
+	table[0] = false;
+	table[1] = false;
+
+	for(int i=2; i<=32768; i++)
+		if(table[i])
+		{
+			for(int j=i*i; j<=32768; j+=i)
+				table[j] = false;
+		}
 }
 
 int main()
@@ -25,21 +32,23 @@ int main()
 	freopen("input.in", "r", stdin);
 	#endif
 
-	int num;
+	memset(table, 1, sizeof(table));
+	prime_table();
 
-	while(scanf("%d", &num) && num!=0)
+	int input;
+
+	while(~scanf("%d", &input) && input)
 	{
-		int tmp1, tmp2, count=0;
+		int count = 0;
+		int l = input/2, r = input/2;
 
-		tmp1 = tmp2 = num/2;
-
-		while(tmp1 != 1)
+		while(r <= input || l == 2)
 		{
-			if(prime(tmp1)==true && prime(tmp2)==true)
+			if(table[l] == true && table[r] == true)
 				count++;
 
-			tmp1 -= 1;
-			tmp2 += 1;
+			l--;
+			r++;
 		}
 
 		printf("%d\n", count);

@@ -1,57 +1,46 @@
 // ----------
 // UVa 11389 - The Bus Driver Problem
-// https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2384
+// https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2384
 // https://www.udebug.com/UVa/11389
 // ----------
 
-#include <cstdio>
-#include <cstring>
-#include <cmath>
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <set>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-	#ifdef DEBUG
+	#ifdef DBG
 	freopen("input.in", "r", stdin);
 	freopen("output.out", "w", stdout);
 	#endif
 
 	int n, d, r;
 
-	while(scanf("%d %d %d", &n, &d, &r) && (n || d || r))
+	while(scanf("%d %d %d", &n, &d, &r) && (n != 0 || d != 0  || r != 0) )
 	{
-		int morning[n], night[n];
-
+		int mor[n];
+		int eve[n];
+		
 		for(int i=0; i<n; i++)
-			scanf("%d", &morning[i]);
-
+			scanf("%d", &mor[i]);
 		for(int i=0; i<n; i++)
-			scanf("%d", &night[i]);
+			scanf("%d", &eve[i]);
 
+		sort(mor, mor+n);
+		sort(eve, eve+n, greater<int>());
 
-		sort(morning, morning+n);
-		sort(night, night+n);
-
-		int total = 0;
+		int money = 0;
 
 		for(int i=0; i<n; i++)
 		{
-			if(morning[i] + night[n-1-i] > d)
-				total += ((morning[i] + night[n-1-i]) - d) * r;
+			int tmp = mor[i] + eve[i];
+
+			if(tmp > d)
+				money += (tmp-d)*r;
 		}
 
-		printf("%d\n", total);
+		printf("%d\n", money);
 	}
-	
-	return 0;	
+	return 0;
 }

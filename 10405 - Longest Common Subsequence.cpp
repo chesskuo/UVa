@@ -17,16 +17,14 @@ int main()
 	freopen("output.out", "w", stdout);
 	#endif
 
-	char a[1000], b[1000];
+	string a, b;
 
-	while(~scanf("%1000[^\n]", a))
+	while(getline(cin, a))
 	{
-		getchar();
-		scanf("%1000[^\n]", b);
-		getchar();
+		getline(cin, b);
 
-		int lena = strlen(a);
-		int lenb = strlen(b);
+		int lena = a.length();
+		int lenb = b.length();
 
 		for(int i=0; i<=lena; i++)
 			lcs[i][0] = 0;

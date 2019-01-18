@@ -33,28 +33,29 @@ int main()
 				break;
 		}
 
+
 		if(total % 2)
 			printf("NO\n");
 		else
 		{
-			int dp[21][4001] = {0};
 			total /= 2;
 
-			dp[0][0] = 1;
+			int bag[202]={0};
 
 			for(int i=0; i<=total; i++)
-			{
-				for(int j=1; j<index; j++)
-					if(i == 0)
-						dp[j][i] = 1;
-					else
-						dp[j][i] = (dp[j-1][i] | dp[j-1][i - arr[j]]);
-			}
+				f[i] = 0;
 
-			if(dp[index-1][total])
-				printf("YES\n");
-			else
+			bag[0] = 1;
+
+			for(int i=0; i<index; i++)
+				for(int j=total; j>=arr[i]; j--)
+					if(bag[j-arr[i]])
+						bag[j] = 1;
+			
+			if(bag[total] == 0)
 				printf("NO\n");
+			else
+				printf("YES\n");
 		}
 	}
 
